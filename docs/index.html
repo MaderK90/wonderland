@@ -32,13 +32,13 @@
 
             <a-entity sound="src: #soundbg; autoplay:true" ></a-entity>
 
-           <a-entity light="type: ambient; color: #EEE; intensity: 1; castshdow:true" position="-1 1 0" ></a-entity>
+           <a-entity light="type: point; color: #EEE; intensity: 1; castshadow:true" position="-1 1 0" ></a-entity>
 
 
             <a-box change_cat  scr="#black" width="2" height="2" depth="0.2" position="-2 2 -10"  >
             </a-box>
 
-             <a-box change_rabbit  scr="#black" width="2" height="2" depth="0.2" position="2 2 -5" >
+             <a-box change_rabbit  scr="#black" width="2" height="2" depth="0.2" position="2 2 -5" light="type:directional; castShadow:true;" shadow="autoUpdate: true">
             </a-box>
 
             <a-box change_alice  scr="#black" width="2" height="2" depth="0.2" position="-6 2 -10" >
@@ -54,7 +54,7 @@
             
             <a-gltf-model  src="#cat" position="0 5 -10" animation="property:scale; dur: 10000; from: 0.1 0.1 0.11;    to: 1 1 1;   dir: alternate; easing: easeInOutCirc; loop:false"  ></a-gltf-model>
 
-            <a-gltf-model  src="#rabbit3d" position="-15 0 -10" rotation= "0 90 0" ></a-gltf-model>
+            <a-gltf-model  src="#rabbit3d" position="-15 0 -10" rotation= "0 90 0" light="type:directional; castShadow:true" shadow="autoUpdate: true"></a-gltf-model>
             
             <a-gltf-model  src="#card" position="200 1 -200" animation="property: rotation; from:0 0 0;to:0 0 360; easing:linear; dur:50000; loop:true;" ></a-gltf-model>
             <a-gltf-model  src="#card" position="0 1 -200" animation="property: rotation; from:0 0 0;to:0 0 360; easing:linear; dur:50000; loop:true;" ></a-gltf-model>
