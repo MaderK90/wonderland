@@ -18,12 +18,13 @@
                 <img id="rabbit" src="assets/rabbit.jpg">
                 <img id="alice" src="assets/alice.jpg">
                 <img id="zauberer" src="assets/zauberer.jpg">
+                <img id="tapete" src="assets/tapete.png">
                
 
                
                 <a-asset-item id="cat" src="assets/delight/scene.gltf"></a-asset-item>
                 <a-asset-item id="rabbit3d" src="assets/follow_the_white_rabbit_llandudno_simon_hedger/scene.gltf"></a-asset-item>
-             
+                <a-asset-item id="card" src="assets/4_of_clubs_playing_card/scene.gltf"></a-asset-item>
         
             </a-assets>
 
@@ -46,18 +47,20 @@
             <a-sphere src="#moon" position="3 5 -5" radius="0.5"  shadow animation="property: rotation; from:0 0 0;to:360 0 0; easing:linear; dur:100000; loop:true;"></a-sphere>
            
             
-            <a-gltf-model  src="#cat" position="0 4 -5" animation="property:scale; dur: 10000; from: 0.1 0.1 0.11;    to: 1 1 1;   dir: alternate; easing: easeInOutCirc; loop:" ></a-gltf-model>
+            <a-gltf-model  src="#cat" position="0 4 -5" animation="property:scale; dur: 10000; from: 0.1 0.1 0.11;    to: 1 1 1;   dir: alternate; easing: easeInOutCirc; loop:false" ></a-gltf-model>
 
-            <a-gltf-model  src="#rabbit3d" position="0 2 -3" animation="property:position; dur: 10000; from: 20 1 -15;    to: -20 1 -15;   dir: left; easing: easeInOutCirc; loop:"  ></a-gltf-model>
+            <a-gltf-model  src="#rabbit3d" position="-15 0 -10" rotation= "0 90 0" ></a-gltf-model>
             
-           
+            <a-gltf-model  src="#card" position="200 1 -200" animation="property: rotation; from:0 0 0;to:0 0 360; easing:linear; dur:50000; loop:true;" ></a-gltf-model>
+            <a-gltf-model  src="#card" position="0 1 -200" animation="property: rotation; from:0 0 0;to:0 0 360; easing:linear; dur:50000; loop:true;" ></a-gltf-model>
+            <a-gltf-model  src="#card" position="-200 1 -200" animation="property: rotation; from:0 0 0;to:0 0 360; easing:linear; dur:50000; loop:true;" ></a-gltf-model>
 
             <a-camera>
                 <a-cursor></a-cursor>
             </a-camera>
 
             <a-sky
-            src="#sky" repeat="2  "
+            src="#sky" repeat="6  6"
             ></a-sky>
 
             <a-plane
