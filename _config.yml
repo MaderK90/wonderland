@@ -1,6 +1,2 @@
 theme: jekyll-theme-slate
-<html>
-  <head>
-    <META http-equiv="refresh" content="0;URL=/docs/index.html">
-  </head>
-</html>
+source: /docs/index.html
