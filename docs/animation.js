@@ -1,7 +1,7 @@
 AFRAME.registerComponent('change_cat', {
     schema: {
         normal: {type: 'string', default: 'assets/black.jpg'},
-        hover: {type: 'string', default: 'assets/katze.png'}
+        hover: {type: 'string', default: 'assets/cat2.jpg'}
     },
     init: function() {
         const el = this.el; // Reference the entity where the component is attached to
