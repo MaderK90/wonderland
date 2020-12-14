@@ -1,2 +1,6 @@
 theme: jekyll-theme-slate
-source: /docs/index.html
+
+aframe-example
+└── _docs
+    ├── index.html    
+  
