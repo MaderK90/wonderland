@@ -1,6 +1,3 @@
 theme: jekyll-theme-slate
 
-aframe-example
-└── _docs
-    ├── index.html    
-  
+source: aframe-example/docs/index.html
