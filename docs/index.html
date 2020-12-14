@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+        <script src="animation.js"></script>
+       
+       
+    </head>
+    <body>
+     
+        <a-scene model-viewer="gltfModel: #cat,#rabbit3d; title: Cat">
+            <a-assets>
+                <img id="floor" src="assets/floor.jpg">
+                <img id="sky" src="assets/sternen-himmel.jpg">
+                <img id="sand" src="assets/sand.jpg">
+                <img id="moon" src="assets/moon.jpg">
+                <img id="katze" src="assets/katze.png">
+                <img id="black" src="assets/black.jpg">
+                <img id="rabbit" src="assets/rabbit.jpg">
+                <img id="alice" src="assets/alice.jpg">
+                <img id="zauberer" src="assets/zauberer.jpg">
+               
+
+               
+                <a-asset-item id="cat" src="assets/delight/scene.gltf"></a-asset-item>
+                <a-asset-item id="rabbit3d" src="assets/follow_the_white_rabbit_llandudno_simon_hedger"></a-asset-item>
+             
+        
+            </a-assets>
+
+           
+
+            <a-box change_cat  scr="#black" width="2" height="2" depth="0.2" position="-2 2 -10">
+            </a-box>
+
+             <a-box change_rabbit  scr="#black" width="2" height="2" depth="0.2" position="2 2 -5">
+            </a-box>
+
+            <a-box change_alice  scr="#black" width="2" height="2" depth="0.2" position="-6 2 -10">
+            </a-box>
+
+
+            <a-box change_zauberer  scr="#black" width="2" height="2" depth="0.2" position="6 2 -5">
+            </a-box>
+            
+
+            <a-sphere src="#moon" position="3 5 -5" radius="0.5"  shadow animation="property: rotation; from:0 0 0;to:360 0 0; easing:linear; dur:100000; loop:true;"></a-sphere>
+           
+            
+            <a-gltf-model  src="#cat" position="0 4 -5" animation="property:scale; dur: 10000; from: 0.1 0.1 0.11;    to: 1 1 1;   dir: alternate; easing: easeInOutCirc; loop:" ></a-gltf-model>
+
+            <a-gltf-model  src="#rabbit3d" position="0 2 -3" animation="property:position; dur: 10000; from: 0 1 0;    to: 0 4 -5;   dir: alternate; easing: easeInOutCirc; loop:"  ></a-gltf-model>
+            
+           
+
+            <a-camera>
+                <a-cursor></a-cursor>
+            </a-camera>
+
+            <a-sky
+            src="#sky" repeat="2  "
+            ></a-sky>
+
+            <a-plane
+            src="#floor"
+            repeat="20 20"
+            normal-map="#floor"
+            normal-repeat="20 20"
+            rotation="-90 0 0"
+            scale="100 100 1"
+            ></a-plane>
+
+      
+
+        </a-scene>
+    
+        
+
+        
+
+    
+        
+
+    
+    </body>
+</html>
