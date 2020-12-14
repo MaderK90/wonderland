@@ -19,6 +19,7 @@
                 <img id="alice" src="assets/alice.jpg">
                 <img id="zauberer" src="assets/zauberer.jpg">
                 <img id="tapete" src="assets/tapete.png">
+                <img id="uhr" src="assets/uhr.jpg">
                
 
                
@@ -30,24 +31,24 @@
 
            
 
-            <a-box change_cat  scr="#black" width="2" height="2" depth="0.2" position="-2 2 -10">
+            <a-box change_cat  scr="#black" width="2" height="2" depth="0.2" position="-2 2 -10" >
             </a-box>
 
-             <a-box change_rabbit  scr="#black" width="2" height="2" depth="0.2" position="2 2 -5">
+             <a-box change_rabbit  scr="#black" width="2" height="2" depth="0.2" position="2 2 -5" >
             </a-box>
 
-            <a-box change_alice  scr="#black" width="2" height="2" depth="0.2" position="-6 2 -10">
+            <a-box change_alice  scr="#black" width="2" height="2" depth="0.2" position="-6 2 -10" >
             </a-box>
 
 
-            <a-box change_zauberer  scr="#black" width="2" height="2" depth="0.2" position="6 2 -5">
+            <a-box change_zauberer  scr="#black" width="2" height="2" depth="0.2" position="6 2 -5" >
             </a-box>
             
 
-            <a-sphere src="#moon" position="3 5 -5" radius="0.5"  shadow animation="property: rotation; from:0 0 0;to:360 0 0; easing:linear; dur:100000; loop:true;"></a-sphere>
+            <a-sphere src="#uhr" repeat="2" rotation="0 90 0" position="2 5 -5" radius="0.5"   shadow animation="property: rotation; from:0 0 0;to:0 0 360; easing:linear; dur:100000; loop:true;"></a-sphere>
            
             
-            <a-gltf-model  src="#cat" position="0 4 -5" animation="property:scale; dur: 10000; from: 0.1 0.1 0.11;    to: 1 1 1;   dir: alternate; easing: easeInOutCirc; loop:false" ></a-gltf-model>
+            <a-gltf-model  src="#cat" position="0 5 -10" animation="property:scale; dur: 10000; from: 0.1 0.1 0.11;    to: 1 1 1;   dir: alternate; easing: easeInOutCirc; loop:false"  ></a-gltf-model>
 
             <a-gltf-model  src="#rabbit3d" position="-15 0 -10" rotation= "0 90 0" ></a-gltf-model>
             
@@ -60,7 +61,7 @@
             </a-camera>
 
             <a-sky
-            src="#sky" repeat="6  6"
+            src="#tapete" repeat="6  6"
             ></a-sky>
 
             <a-plane
