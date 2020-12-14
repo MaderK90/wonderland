@@ -26,9 +26,11 @@
                 <a-asset-item id="cat" src="assets/delight/scene.gltf"></a-asset-item>
                 <a-asset-item id="rabbit3d" src="assets/follow_the_white_rabbit_llandudno_simon_hedger/scene.gltf"></a-asset-item>
                 <a-asset-item id="card" src="assets/4_of_clubs_playing_card/scene.gltf"></a-asset-item>
+                <audio id="soundbg" src="assets/bensound-ofeliasdream.mp3" preload="auto"></audio>
         
             </a-assets>
 
+            <a-entity sound="src: #soundbg; autoplay:true" ></a-entity>
            
 
             <a-box change_cat  scr="#black" width="2" height="2" depth="0.2" position="-2 2 -10" >
